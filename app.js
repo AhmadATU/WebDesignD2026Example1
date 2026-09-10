@@ -24,8 +24,11 @@ app.engine(
 app.set('view engine', 'hbs');
 // where to find all of the view
 app.set('views',  'views');
+
+
 // where to find static files - css, images, js
-app.use(express.static('public'));
+// this needs to be uncommented so that the css file can be found and used in the layout.hbs file
+//app.use(express.static('public'));
 
 // home page or home route
 app.get('/', (req, res) => {
