@@ -6,6 +6,8 @@ const exphbs = require('express-handlebars');
 // instantiate express
 const app = express();
 
+app.use(express.static('public'));
+
 // configure express to use handlebars as templating engine
 app.engine(
   'hbs',
