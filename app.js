@@ -48,13 +48,37 @@ app.get('/', (req, res) => {
 
 });
 
-// contact route
-app.get('/contact', (req, res) => {
-    state={contact : true}
-    head={title:"Contact - Week 1"}
-    res.render('contact', { state, head});
-    console.log('contact')
+   app.get('/machine', (req, res) => {
+    state={machine : true}
+    head={title:"Machine - Week 1"}
+    res.render('machine', { state, head});
+    console.log('machine')
   });
+
+    app.get('/staff', (req, res) => {
+    state={staff : true}
+    head={title:"staff - Week 1"}
+    res.render('staff', { state, head});
+    console.log('staff')
+  });
+
+// contact route
+app.get('/contactform', (req, res) => {
+    state={contact : true}
+    head={title:"Contactform - Week 1"}
+    res.render('contactform', { state, head});
+    console.log('contactform')
+  });
+
+
+   app.get('/about', (req, res) => {
+    state={about : true}
+    head={title:"About - Week 1"}
+    res.render('about', { state, head});
+    console.log('about')
+  });
+
+
 
 
 // Start the server
