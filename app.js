@@ -8,6 +8,12 @@ const app = express();
 
 app.use(express.static('public'));
 
+//add path for page
+const path = require('path');
+app.get('/machine.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'machine.html'));
+});
+
 // configure express to use handlebars as templating engine
 app.engine(
   'hbs',
