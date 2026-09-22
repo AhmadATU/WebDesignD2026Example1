@@ -1,0 +1,402 @@
+/*header common*/
+header
+{
+   background: linear-gradient(135deg, rgb(27, 101, 153) 0%, rgb(137, 165, 217) 100%);
+   padding: 10px;
+}
+/*Text Tool hub pro*/
+h1{ 
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+/*Nav common*/
+nav
+{
+    padding: 5px;
+    background: linear-gradient(135deg, rgb(2, 8, 88) 0%, rgb(6, 9, 153) 90%);
+    
+}
+nav ul li {
+    list-style-type: none;
+    background: linear-gradient(135deg, rgb(56, 62, 153) 0%, rgb(43, 47, 255) 90%);
+    display: inline;
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.651);
+    border-radius: 10px;
+    
+}
+
+
+
+nav ul li :hover
+{
+       background-color: rgb(15, 71, 123);
+}
+.active{
+border: dotted;
+}
+
+nav ul
+{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav ul li a {
+    
+        text-decoration: none;
+        color: white;
+}
+/*Nav common end here*/
+
+/*About hero section for every page*/
+.about-hero {
+                background: linear-gradient(135deg, rgb(2, 8, 88) 0%, rgb(6, 9, 153) 100%);
+                color: white;
+                text-align: center;
+                padding: 60px 20px;
+                border-radius: 15px;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+ .about-hero h2 {
+                color: white;
+                font-size: 2.5em;
+                margin: 0 0 15px 0;
+            }
+
+            .about-hero p {
+                font-size: 1.2em;
+                opacity: 0.9;
+            }
+/*About hero section for every page end here*/
+
+/*GEneral for every page */
+body{
+    font-family:Verdana;
+    margin: 0px;
+    padding: 0px;
+    background-color:White;
+}
+
+main{
+    margin-bottom: 5%;
+}
+
+/*box for page 1 and 2*/
+.container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+            gap: 80px;
+            padding: 20px;
+            
+            margin-bottom: 0px;
+        }
+        article.card {
+            background: white;
+            border-radius: 20px;
+            border: 2px solid rgb(215, 215, 215);
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+         article.card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        article.card img {
+            width: 90%;
+            height: 180px;         
+            background: #f8f9fa;
+            padding: 0px;
+        }
+
+        .card-name {
+            padding: 10px;
+            font-weight: bold;
+            color: rgb(2, 8, 88);
+            display: block;
+        }
+
+        .price {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 5px;
+            display: block;
+        }
+
+        article.card button {
+            background: rgb(2, 8, 88);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            width: calc(100% - 30px);
+        }
+
+        article.card button:hover {
+            background: rgb(27, 101, 153);
+        }
+/*end here for boxes*/
+
+p{
+    margin: 0;
+    padding: .5em;
+}
+img{
+    
+    margin: 0px;
+    border: black solid 2px;
+}
+h2{
+    color: rgb(94, 94, 122);
+}
+h5{
+    color: black;
+}
+.logo{
+    padding: 0px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+
+
+/*Common footer for every page*/
+footer
+{
+    margin: 0px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 6%;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, rgb(2, 8, 88) 0%, rgb(6, 9, 153) 90%);
+    clear: both;  
+}
+/*contact form start*/
+label{
+    float: left;
+    width: 112px;
+    padding-right: 10px;
+    text-align: right;
+}
+input{
+    margin-left: 3em;
+    margin-bottom: 2em;
+    width: 220px;
+}
+#button, #reset{
+    margin-top: .5em;
+    width: 8em;
+    background: linear-gradient(135deg, rgb(201, 205, 255) 0%, rgb(95, 97, 239) 90%);
+    border: 2px solid rgb(5, 19, 125);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+ .button-group {
+                    flex-direction: column;
+                    align-items: center;
+                }
+    input[type = "radio"] {width: 30%;}
+    #button{margin-left: 138px; height: 50px; width: 100px; border: black solid 5px;}
+    #reset{margin-left: 82px; height: 50px; width: 100px;border: black solid 5px}
+    input[type = "radio"] {width: 20px;}
+
+            .required {
+                color: red;
+                font-weight: bold;
+            }
+
+.main{
+    font-weight: bold;
+    margin: 15px 20px;
+    padding: 30px;
+    border: black solid 2px;
+    background: white;
+    margin-left: 30%;
+    margin-right: 30%;
+     border: 2px solid rgb(215, 215, 215);
+    border-radius: 20px;
+}
+.main h2{
+                color: rgb(2, 8, 88);
+                margin-top: 0;
+                margin-bottom: 15px;
+                text-align: center;
+
+}
+/*contact form end*/
+
+/*Staff page*/
+ .col_detail {
+            column-count: 3;
+            column-rule: 5px solid rgb(2, 9, 113);
+            column-gap: 50px;
+            padding: 2px;
+            height: 250px;
+        }
+        
+        /* Optional: Add some basic styling for better readability */
+        
+        .col_detail {
+            width: 90%;
+            margin-left: 75px;
+            background-color: #fafafa;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        /*background image on staff page*/
+        audio{
+            margin-top: 30px;
+        }
+        .background{
+    background-image:url(../pictures/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 30%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-left: 70px;
+}
+/* staff page css end */
+
+/* start  of about page */
+              #content{
+                      float: left;
+                      width: 60%;
+                     border-radius: 20px;
+                     border: 2px solid rgb(247, 247, 247);
+                     margin-left: 40px;
+                     margin-top: 40px;
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.1);}   
+
+            #content  h3 {
+                color: rgb(2, 8, 88);
+                margin-top: 0;
+                margin-bottom: 15px;
+                margin-left: 20px;
+                font-size: 1.5em;
+                padding-left: 10px;
+                border-left: 5px solid rgb(2, 8, 88);
+            }
+
+            #content p {
+                margin-left: 20px;
+                line-height: 1.6;
+                color: #333;
+                font-size: 1em;
+                margin-bottom: 20px;
+            }
+.videoContent{
+    float: left;
+    width: 45%;
+    border: 2px solid rgb(244, 244, 246);
+    border-radius: 20px;
+    max-height: 450px;
+    min-height: 450px;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+            
+.mapContent{
+    float: right;
+    
+    width: 45%;
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 20px;
+    max-height: 450px;
+    min-height: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.videoContent h3, .mapContent, aside h3 {
+                color: rgb(2, 8, 88);
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+            .videoContent h3 {
+                color: rgb(2, 8, 88);
+                margin-top: 18px;
+                margin-bottom: 12px;
+            }
+            iframe{
+                width: 90%;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+
+            }
+aside {
+    float: right;
+    width: 30%;
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-top: 30px; 
+    margin-right: 40px;
+    margin-bottom: 40px;
+    text-decoration: none;
+   
+}
+
+
+aside li {
+  display: block;
+   text-decoration: none;
+    list-style-type: none;
+  margin-bottom: 15px;
+}
+/*Table*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid rgb(5, 0, 55);
+    padding: 3px;
+}
+/* end of about page */
+
+/*Navigation in footer*/
+.footer.nav li {
+    display: inline-block;  /* or display: inline */
+    margin: 0 10px;  
+}
+.footer.nav {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0px;
+
+}
+footer a{
+    color: rgb(132, 181, 231);
+    text-decoration: none;
+    display:inline-block;
+    
+list-style-type: square;
+
+
+list: square;
+}
