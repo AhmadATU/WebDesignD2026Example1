@@ -48,6 +48,7 @@ app.get('/', (req, res) => {
 
 });
 
+
    app.get('/machine', (req, res) => {
     state={machine : true}
     head={title:"Machine - Week 1"}
