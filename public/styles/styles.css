@@ -1,4 +1,9 @@
 /*header common*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 header
 {
    background: linear-gradient(135deg, rgb(27, 101, 153) 0%, rgb(137, 165, 217) 100%);
@@ -92,11 +97,12 @@ main{
             grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
             gap: 80px;
             padding: 20px;
+            background-color: white ;
             
             margin-bottom: 0px;
         }
         article.card {
-            background: white;
+            background: rgb(252, 252, 252);
             border-radius: 20px;
             border: 2px solid rgb(215, 215, 215);
             padding: 20px;
@@ -122,6 +128,19 @@ main{
             color: rgb(2, 8, 88);
             display: block;
         }
+        .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid lightgrey;
+    background: lightblue;
+    width: 100%;
+    padding: 0px 5px;
+}
+
 
         .price {
             color: #27ae60;
@@ -398,5 +417,63 @@ footer a{
 list-style-type: square;
 
 
-list: square;
+
 }
+
+
+
+
+
+
+
+/* Stop horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Keep images and iframes inside their boxes */
+img, iframe {
+    max-width: 100%;
+}
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    .col_detail {
+        column-count: 2;
+        height: auto;
+    }
+
+    #content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .videoContent,
+    .mapContent {
+        width: 90%;
+        float: none;
+        margin: 30px auto;
+        min-height: auto;
+        max-height: none;
+    }
+
+    aside {
+        width: 90%;
+        float: none;
+        margin: 30px auto;
+    }
+
+    .background {
+        width: 60%;
+    }
+}
+
+
