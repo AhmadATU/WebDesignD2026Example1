@@ -437,6 +437,8 @@ img, iframe {
     max-width: 100%;
 }
 
+
+
 /* ---------- TABLET ---------- */
 @media (max-width: 1024px) {
     .container {
@@ -475,5 +477,10 @@ img, iframe {
         width: 60%;
     }
 }
+
+
+
+
+
 
 

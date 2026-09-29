@@ -78,6 +78,12 @@ app.get('/contactform', (req, res) => {
     res.render('about', { state, head});
     console.log('about')
   });
+  app.get('/responsiveexample', (req, res) => {
+    state={responsiveexample : true}
+    head={title:"Responsive Example - Week 1"}
+    res.render('responsiveexample', { state, head});
+    console.log('responsiveexample')
+  });
 
 
 
