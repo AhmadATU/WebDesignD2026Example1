@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        {{> _head}}
-    </head>
-    <body>
-        {{> _nav}}
-        {{{body}}}
-        {{> _footer}}
-    </body>
+
+<head>
+    {{> _head}}
+</head>
+
+<body>
+    {{> _nav}}
+    {{{body}}}
+    {{> _footer}}
+
+    <script>
+        const button = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("nav");
+
+        button.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+    </script>
+</body>
+
 </html>

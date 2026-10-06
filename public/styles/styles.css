@@ -11,7 +11,7 @@ header
 }
 /*Text Tool hub pro*/
 h1{ 
-    color: rgb(255, 255, 255);
+    color: rgb(10, 6, 6);
     text-align: left;
 }
 /*Nav common*/
@@ -34,6 +34,7 @@ nav ul li {
 
 
 
+
 nav ul li :hover
 {
        background-color: rgb(15, 71, 123);
@@ -51,7 +52,7 @@ nav ul
 nav ul li a {
     
         text-decoration: none;
-        color: white;
+        color: rgb(0, 0, 0);
 }
 /*Nav common end here*/
 
@@ -415,18 +416,79 @@ footer a{
     display:inline-block;
     
 list-style-type: square;
+}
+/*toggle for menu*/
 
+nav {
+    display: none;
+}
 
-
+nav.show {
+    display: block;
+    background-color: #1a1a4d;
+    width: 100%;
 }
 
 
+nav.show ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;          
+}
 
+nav.show ul li {
+    display: block;            
+    background: none;          
+    border: none;             
+    border-radius: 0;
+    border-top: 1px solid #555;
+    margin: 0;
+    padding: 0;
+}
 
+nav.show ul li a {
+    display: block;
+    padding: 0.5rem ;
+    color: white;
+    text-decoration: none;
+}
 
+nav.show ul li a:hover {
+    background-color: #5f5cf7;
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    color: rgb(2, 1, 1);
+    font-size: 2rem;
+    cursor: pointer;
+    align-items: right;
+}
+/*toggle for menu java script*/
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
 
+    nav {
+        display: block;
+    }
 
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
 
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: 0;
+    }
+
+}
 html, body {
     overflow-x: hidden;
     max-width: 100%;
