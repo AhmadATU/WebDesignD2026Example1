@@ -204,31 +204,39 @@ footer
 }
 /*contact form start*/
 label{
-    float: left;
-    width: 112px;
-    padding-right: 10px;
-    text-align: right;
+   display: block;
+    width: 100px; 
+}
+label.lebel {
+    display: inline-block;
+    width: auto; 
+}
+select{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 220px;
+    display: block;
 }
 input{
-    margin-left: 3em;
-    margin-bottom: 2em;
+    margin-left:0px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     width: 220px;
+
 }
+
+
 #button, #reset{
     margin-top: .5em;
     width: 8em;
     background: linear-gradient(135deg, rgb(201, 205, 255) 0%, rgb(95, 97, 239) 90%);
     border: 2px solid rgb(5, 19, 125);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
     border-radius: 10px;
 }
- .button-group {
-                    flex-direction: column;
-                    align-items: center;
-                }
-    input[type = "radio"] {width: 30%;}
-    #button{margin-left: 138px; height: 50px; width: 100px; border: black solid 5px;}
-    #reset{margin-left: 82px; height: 50px; width: 100px;border: black solid 5px}
+
+    input[type = "radio"] {width: 1%;}
+    #button{ height: 50px; width: 100px; border: black solid 3px;}
     input[type = "radio"] {width: 20px;}
 
             .required {
